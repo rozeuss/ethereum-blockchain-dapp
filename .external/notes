@@ -1,0 +1,16 @@
+geth --datadir=./chaindata/ --port "35555" --ipcdisable
+geth attach \\\\.\\pipe\\geth.ipc
+geth attach http://127.0.0.1:8545
+
+
+
+truffle console, migrate --reset
+
+Election.deployed().then(function(instance) { app = instance })
+
+HelloWorld.deployed().then(function(instance) { app = instance })
+
+metadata:
+app.vote(1, { from: web3.eth.accounts[0] })
+
+web3.eth.defaultAccount = web3.eth.accounts[0]
