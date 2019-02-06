@@ -1,0 +1,19 @@
+{
+  "name": "ethereum-blockchain-dapp",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "copy-contracts": "cp -f build/contracts/*.json src/contracts/",
+    "dev-server": "lite-server -c ./server-config",
+    "dev": "npm run copy-contracts && npm run dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "truffle": "^5.0.0",
+    "web3-utils": "^1.0.0-beta.37"
+  }
+}

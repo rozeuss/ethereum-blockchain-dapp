@@ -45,7 +45,7 @@ App = {
                 fromBlock: 0,
                 toBlock: 'latest'
             }).watch(function (error, event) {
-                console.log("event triggered", event)
+                console.log("event triggered", event);
                 // Reload when a new vote is recorded
                 App.render();
             });
@@ -86,11 +86,11 @@ App = {
                     var voteCount = candidate[2];
 
                     // Render candidate Result
-                    var candidateTemplate = "<tr><th>" + id + "</th><td>" + name + "</td><td>" + voteCount + "</td></tr>"
+                    var candidateTemplate = "<tr><th>" + id + "</th><td>" + name + "</td><td>" + voteCount + "</td></tr>";
                     candidatesResults.append(candidateTemplate);
 
                     // Render candidate ballot option
-                    var candidateOption = "<option value='" + id + "' >" + name + "</ option>"
+                    var candidateOption = "<option value='" + id + "' >" + name + "</ option>";
                     candidatesSelect.append(candidateOption);
                 });
             }

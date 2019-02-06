@@ -14,3 +14,8 @@ metadata:
 app.vote(1, { from: web3.eth.accounts[0] })
 
 web3.eth.defaultAccount = web3.eth.accounts[0]
+
+
+
+todo czasowe ograniczenie, ograniczenie kto moze glosowac
+todo uzycie Jade do widokow? node-sass
